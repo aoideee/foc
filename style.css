@@ -1,0 +1,119 @@
+@font-face {font-family: 'NewsGothicStd';
+     src: url('NewsGothicStd.woff2') format('woff2');
+     font-weight: normal;
+     font-style: normal;}
+
+
+@font-face {font-family: 'CalvertMTStd';
+     src: url('CalvertMTStd.woff2') format('woff2');
+     font-weight: normal;
+     font-style: normal;}
+
+body{background-color: #01161E;
+     color: #EFF6E0;
+     overflow-x: hidden;
+     opacity: 0;
+     transition: opacity 3.5s ease-in-out;
+   }
+   
+   body.fade-in {
+     opacity: 1;
+   }
+
+p{font-family: 'NewsGothicStd', sans-serif;}
+
+.navbar-nav .nav-link {
+  color: #EFF6E0 !important;}
+
+  .navbar-nav .nav-link:hover{color: #AEC3B0 !important;}
+
+  
+h2{padding-left: 3%;
+  font-size: 160%;}
+
+nav.navbar{background: linear-gradient(180deg, #124559, #01161E) !important;
+     font-family: 'CalvertMTStd', sans-serif;
+     position: sticky;
+     font-size: 110%;}
+
+        img.navbar{height: 100px;
+                    width: auto;
+                    padding-right: 20px;
+                    transition: 0.5s;}
+
+        img.navbar:hover{height: 110px;
+                         width: auto;}
+
+        img{margin-right: 30%;
+            margin-left: 30%;
+            width: 37%;
+            height: auto;
+            border-radius: 25px;}
+
+            a.navbar{font-size: 110%;
+               text-decoration: none;}
+
+             a.nav-link{transition: 0.5s;}
+
+             a.nav-link:hover{font-size: 112%;}
+
+        .border{margin-left: 20%;
+                margin-right: 20%;
+                border-radius: 25px;
+                border: none !important;
+                background-color: #124559;}
+
+        .resume{margin-right: 10%;
+                margin-left: 10%;
+                padding-top: 5%;
+                padding-bottom: 10%;
+                background-color: #124559 !important;}
+
+        ::-webkit-scrollbar {width: 10px;}
+
+        ::-webkit-scrollbar-track {background-color: #598392}
+
+        ::-webkit-scrollbar-thumb {background-color: #0B2C39;
+                                   border-radius: 80px;}
+
+        ::-webkit-scrollbar-thumb:hover {background-color: #0E394B;}
+
+        .container {
+          max-width: 960px;
+          margin: 0 auto;
+          padding: 20px;
+      }
+      
+      
+
+      @media (max-width: 600px) {
+          nav, article {
+            width: 100%;
+            height: auto;
+          }
+        }
+        * {
+          box-sizing: border-box;
+        }
+        
+        /* Create two equal columns that floats next to each other */
+        .column {
+          float: left;
+          width: 50%;
+          padding: 10px;
+        
+        }
+        
+        /* Clear floats after the columns */
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+
+footer {
+  background: linear-gradient(180deg, #01161E, #124559) !important;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    bottom: 0;}
